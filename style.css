@@ -1,0 +1,838 @@
+/* Adding new fonts */
+
+@font-face /* Manrope Regular */
+{
+	font-family: Manrope;
+	src: url(fonts/Manrope-Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face /* Tommy Bold */
+{
+	font-family: Tommy_Bold;
+	src: url(fonts/tommy_bold.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face /* Tommy Light */
+{
+	font-family: Tommy_Light;
+	src: url(fonts/tommy_light.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Main content */
+
+@keyframes transitionIn {
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes transitionOut {
+	from
+	{
+		opacity: 0;
+	}
+
+	to
+	{
+		opacity: 1;
+	}
+}
+
+body
+{
+	background: url(images/noita-digital.jpg) no-repeat center;
+	background-size: cover;
+	animation: transitionIn 1.5s;
+}
+
+#bloc_page
+{
+	width: 90%;
+	margin: auto;
+}
+
+header
+{
+	margin-top: 120px;
+	margin-bottom: 200px;
+}
+
+header h1
+{
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	text-transform: uppercase;
+}
+
+h2, h3
+{
+	text-transform: uppercase;
+}
+
+section h1, footer h1
+{
+	display: flex;
+	font-size: 10em;
+}
+
+/* Header */
+
+	/* Navigation */
+
+nav
+{
+	display: block;
+	position: fixed;
+	float:  left;
+	background-color: black;
+	opacity: 85%;
+	width: 50px;
+	border-radius: 1000px;
+	margin-left: -60px;
+	margin-top: -60px;
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	text-transform: uppercase;
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+
+.nav_links
+{
+	margin-top: 50px;
+	align-items: flex-end;
+}
+
+.home
+{
+	filter: sepia(100%);
+}
+
+nav img
+{
+	filter: invert(75%);
+	width: 300%;
+	margin-left: -30px;
+	margin-bottom: -10px;
+}
+
+nav ul li
+{
+	color: black;
+	font-size: 0.5em;
+}
+
+nav p
+{
+	margin-top: 18px;
+	margin-left: -40px;
+	text-align: center;
+}
+
+a:hover, nav li:hover
+{
+	color: #D9C8A0;
+	position: center;
+	transition-duration: 1.2s;
+	filter: sepia(100%);
+}
+
+nav img:hover
+{
+	transform: scale(1.5);
+	transition-duration: 0.8s;
+}
+
+	/* Présentation */
+
+.informations
+{
+	color: whitesmoke;
+	margin-top: -50px;
+}
+
+.informations img
+{
+	display: block;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	border-radius: 1000px;
+}
+
+.informations h1
+{
+	display: flex;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	justify-content: center;
+	font-size: 8.5em;
+	opacity: 90%;
+	color: #ABCDE1;
+}
+
+.informations h2
+{
+	display: flex;
+	font-family: Tommy_light, Manrope, sans-serif;
+	margin-top: 0px;
+	justify-content: center;
+	font-size: 1.5em;
+	color: whitesmoke;
+}
+
+/* Contenu de la page */
+
+#full_content h1
+{
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	font-size: 6em;
+	text-transform: uppercase;
+	color: whitesmoke;
+	margin-left: 35px;
+	margin-top: 150px;
+}
+
+	/* Article (expériences & formations */
+
+.experiences
+{
+	margin-top: -50px;
+	margin-bottom: 900px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.experiences .box
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #8773C7;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 15px black;
+	overflow: hidden;
+	border-radius: 30px;
+}
+
+.experiences .box img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.experiences .box:hover
+{
+	animation: transitionIn 0.8s;
+	transform: scale(1.1);
+}
+
+.experiences .box img:hover
+{
+	animation: transitionOut 1s;
+	animation-play-state: paused;
+	position: absolute;
+}
+
+.content
+{
+	margin-top: 30px;
+	font-family: Tommy_Light, Manrope, sans-serif;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1em;
+ 	text-align: center;
+}
+
+.content h2
+{
+	font-family: Tommy_Bold, Manrope, sans-serif;
+}
+
+.content ul
+{
+	text-align: left;
+	margin-top: 30px;
+	margin-left: -20px;
+	text-transform: none;
+}
+
+.content p
+{
+	font-size: 0.9em;
+	text-transform: none;
+	color: #1C1F21;
+}
+
+.content h2
+{
+	color: white;
+}
+
+.content h3
+{
+	margin-top: -15px;
+	margin-bottom: 20px;
+	color: #EDDBAF;
+}
+
+.formations
+{
+	margin-left: 100px;
+	margin-bottom: 150px;
+	width: 80%;
+}
+
+.logo_left, .logo_right
+{	
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 500px;
+	height: 300px;
+	background: #8773C7;
+	box-shadow: 10px 10px 15px black;
+	border-radius: 20px;
+}
+
+.formations img
+{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	box-shadow: 10px 10px 15px black;
+	border-radius: 20px;
+}
+
+.logo_left
+{
+	margin-left: 180px;
+	border-right: 2mm ridge darkgrey;
+}
+
+
+.logo_right
+{
+	margin-right: 0px;
+	border-right: 2mm ridge darkgrey;
+}
+
+.formations h2
+{
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	color: white;
+	font-size: 1.6em;
+	margin-top: -230px;
+	text-align: center;
+}
+
+.formations h3
+{
+	font-family: Tommy_Light, Manrope, sans-serif;
+	color: #EDDBAF;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.formations p
+{
+	font-family: Tommy_Light, Manrope, sans-serif;
+	color: #1C1F21;
+	margin-top: 50px;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.logo_left:hover, .logo_right:hover
+{
+	animation: transitionIn 0.5s;
+	transform: scale(1.1);
+	border: none;
+	box-shadow: 20px 20px 25px black;
+}
+
+.logo_left img:hover, .logo_right img:hover
+{
+	animation: transitionOut 1s;
+	animation-play-state: paused;
+}
+
+	/* Perso (compétences & passions) */
+
+.competences
+{
+	margin-top: -50px;
+	font-family: Tommy_Light, Manrope, sans-serif;
+	color: white;
+	display: inline-flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.competences ul
+{
+	list-style-type: none;
+}
+
+.competences ul li
+{
+	font-size: 1.3rem;
+}
+
+.competences h2
+{
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	font-size: 4em;
+	color: #EDDBAF;
+}
+
+.savoir-etre
+{
+	width: 500px;
+	color: black;
+	text-transform: uppercase;
+	margin-left: 200px;
+	margin-right: 300px;
+}
+
+.savoir-etre ul
+{
+	margin-top: 100px;
+	position: relative;
+	background: whitesmoke;
+	border-radius: 30px;
+}
+
+.savoir-etre ul li
+{
+	font-size: 2em;
+	padding: 22px;
+	width: 100%;
+	margin-left: -40px;
+	text-align: center;
+	background: whitesmoke;
+	box-shadow: 0 5px 25px darkgrey;
+	transition: transform 1s;
+}
+
+.box-top 
+{
+	border-radius: 30px 30px 0 0;
+}
+
+.box-bottom
+{
+	border-radius: 0 0 30px 30px;
+}
+
+.savoir-etre ul:hover li
+{
+	opacity: 0.2;
+}
+
+.savoir-etre ul li:hover
+{
+	transform: scale(1.2);
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	z-index: 100;
+	background: #8773C7;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+	border-radius: 30px;
+	color: white;
+	opacity: 1;
+}
+
+.savoir-faire
+{
+	width: 500px;
+}
+
+.savoir-faire ul
+{
+	margin-left: -35px;
+}
+
+.savoir-faire li
+{
+ position: relative;
+ margin-bottom: 50px;
+}
+
+.savoir-faire li:before
+{
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 100%;
+	height: 15px;
+	background-color: #E4E8FC;
+	border-radius: 1000px;
+	box-shadow: 10px 10px 10px black;
+}
+
+.savoir-faire li:after
+{
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	width: 0;
+	height: 15px;
+	background-color: #8773C7;
+	border-radius: 1000px;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+li.anglais:after
+{
+	animation-name: anglais;
+}
+
+@keyframes anglais
+{
+	to 
+	{
+		width: 90%;
+	}
+}
+
+li.espagnol:after
+{
+	animation-name: espagnol;
+}
+
+@keyframes espagnol
+{
+	to 
+	{
+		width: 15%;
+	}
+}
+
+li.ableton:after
+{
+	animation-name: ableton;
+}
+
+@keyframes ableton
+{
+	to 
+	{
+		width: 100%;
+	}
+}
+
+li.office:after
+{
+	animation-name: office;
+}
+
+@keyframes office
+{
+	to 
+	{
+		width: 90%;
+	}
+}
+
+li.html:after
+{
+	animation-name: html;
+}
+
+@keyframes html
+{
+	to 
+	{
+		width: 85%;
+	}
+}
+
+li.css:after
+{
+	animation-name: css;
+}
+
+@keyframes css
+{
+	to 
+	{
+		width: 75%;
+	}
+}
+
+li.javascript:after
+{
+	animation-name: javascript;
+}
+
+@keyframes javascript
+{
+	to 
+	{
+		width: 20%;
+	}
+}
+
+li.premiere:after
+{
+	animation-name: premiere;
+}
+
+@keyframes premiere
+{
+	to 
+	{
+		width: 40%;
+	}
+}
+
+.savoir-faire ul:hover
+{
+	transform: scale(1.1);
+	animation: transitionIn 1.5s;
+}
+
+.passions
+{
+	font-family: Tommy_Light, Manrope, sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: #EDDBAF;
+	margin-top: 100px;
+	margin-bottom: 300px;
+}
+
+.passions img
+{
+	position: relative;
+	width: 130px;
+	color: #EDDBAF;
+	filter: invert(90%);
+	vertical-align: middle;
+	margin-right: 30px;
+	margin-bottom: 25px;
+}
+
+.passions ul
+{
+	display: inline-block;
+	list-style-type: none;
+	background: rgba(0, 0, 0, .6);
+	border-radius: 100px;
+	box-shadow: 2px 2px #8773C7, -1em 0 .4em black;
+	width: 500px;
+	margin-top: -20px;
+	margin-left: 200px;
+}
+
+.passions li
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.passions ul:hover
+{
+	transform: scale(1.1);
+	animation: transitionIn 0.8s;
+}
+
+.passions li:hover
+{
+	transform: scale(1.1);
+	filter: sepia(100%);
+	font-family: Tommy_Bold, Manrope, sans-serif;
+}
+
+/* Footer */
+
+footer
+{
+	margin: 0 -200px;
+  	padding: 0 200px;
+	position: relative;
+	background: #3586ff;
+	filter: hue-rotate(36deg);
+	font-family: Tommy_Light, Manrope, sans-serif;
+	color: white;
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer:hover
+{
+	transition-duration: 1s;	
+	color: black;
+	filter: hue-rotate(15deg) sepia(30%) brightness(1.75);
+}
+
+	/* Contact & Réseaux Sociaux */
+
+footer .contact li
+{
+	font-size: 1.2em;
+	margin: 0 10px;
+	margin-right: 50px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+footer .contact img
+{
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+	filter: invert(10%);
+}
+
+footer .contact li:hover
+{
+	animation: transitionIn 0.8s;
+	transform: scale(1.25);
+	font-family: Tommy_Bold, Manrope, sans-serif;
+	filter: invert(80%);
+}
+
+footer .social_links, footer .contact
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+}
+
+footer .social_links
+{
+	margin-top: -20px;
+}
+
+footer .social_links li, footer .contact li
+{
+	list-style-type: none;
+}
+
+footer .social_links ul
+{
+	display: flex;
+	margin-right: 50px;
+}
+
+footer .social_links li a
+{
+	display: inline-block;
+	transition: 0.5s;
+}
+
+footer .social_links li a:hover
+{
+	transform: translateY(-10px) scale(1.1);
+	filter: invert(80%)
+}
+
+footer p
+{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
+footer .wave
+{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: url(images/wave.png);
+	background-size: 1000px 100px;
+}
+
+footer .wave#wave1
+{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave1:hover
+{
+	transition-duration: 2s;
+	background: #EDDBAF;
+}
+
+footer .wave#wave2
+{
+	z-index: 999;
+	opacity: 0.5;
+	bottom: 10px;
+	animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3
+{
+	z-index: 1000;
+	opacity: 0.2;
+	bottom: 15px;
+	animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4
+{
+	z-index: 999;
+	opacity: 0.7;
+	bottom: 20px;
+	animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave
+{
+	0%
+	{
+		background-position-x: 1000px;
+	}
+	100%
+	{
+		background-position-x: 0px;
+	}
+}
+
+@keyframes animateWave_02
+{
+	0%
+	{
+		background-position-x: 0px;
+	}
+	100%
+	{
+		background-position-x: 1000px;
+	}
+}
