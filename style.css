@@ -545,7 +545,7 @@ li.html:after {
 
 @keyframes html {
     to {
-        width: 98%;
+        width: 80%;
     }
 }
 
@@ -555,7 +555,7 @@ li.css:after {
 
 @keyframes css {
     to {
-        width: 90%;
+        width: 70%;
     }
 }
 
