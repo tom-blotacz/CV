@@ -260,7 +260,7 @@ nav img:hover {
     position: relative;
     width: 300px;
     height: 300px;
-    background: #8773c7;
+    background: #73a5c2;
     float: left;
     margin: 15px;
     box-sizing: border-box;
@@ -335,7 +335,7 @@ nav img:hover {
     margin-top: 50px;
     width: 500px;
     height: 300px;
-    background: #8773c7;
+    background: #73a5c2;
     box-shadow: 10px 10px 15px black;
     border-radius: 20px;
 }
@@ -492,7 +492,7 @@ nav img:hover {
     left: 0;
     width: 0;
     height: 15px;
-    background-color: #8773c7;
+    background-color: #73a5c2;
     border-radius: 1000px;
     animation-duration: 3s;
     animation-timing-function: ease;
@@ -545,7 +545,7 @@ li.html:after {
 
 @keyframes html {
     to {
-        width: 90%;
+        width: 98%;
     }
 }
 
@@ -555,7 +555,7 @@ li.css:after {
 
 @keyframes css {
     to {
-        width: 75%;
+        width: 90%;
     }
 }
 
@@ -575,7 +575,7 @@ li.javascript:after {
 
 @keyframes javascript {
     to {
-        width: 35%;
+        width: 50%;
     }
 }
 
@@ -603,7 +603,7 @@ li.javascript:after {
     list-style-type: none;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 100px;
-    box-shadow: 2px 2px #8773c7, -1em 0 0.4em black;
+    box-shadow: 2px 2px #73a5c2, -1em 0 0.4em black;
     width: 500px;
     margin-top: -20px;
     margin-left: 200px;
@@ -620,7 +620,7 @@ footer {
     width: 100%;
     position: relative;
     background: #3586ff;
-    filter: hue-rotate(36deg);
+    filter: hue-rotate(-20deg) sepia(40%);
     font-family: Tommy_Light, Manrope, sans-serif;
     color: white;
     min-height: 100px;
@@ -634,7 +634,7 @@ footer {
 footer:hover {
     transition-duration: 1s;
     color: black;
-    filter: hue-rotate(15deg) sepia(30%) brightness(1.75);
+    filter: hue-rotate(10deg) sepia(100%);
 }
 
 /* Contact & Réseaux Sociaux */
